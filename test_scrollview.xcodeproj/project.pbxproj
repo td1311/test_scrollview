@@ -13,6 +13,7 @@
 		407ACFE829E6F86200D65F47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407ACFE629E6F86200D65F47 /* Main.storyboard */; };
 		407ACFEA29E6F86400D65F47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407ACFE929E6F86400D65F47 /* Assets.xcassets */; };
 		407ACFED29E6F86400D65F47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407ACFEB29E6F86400D65F47 /* LaunchScreen.storyboard */; };
+		40E1DEFF29E7121C00A2C672 /* AdjustedHeightTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E1DEFE29E7121C00A2C672 /* AdjustedHeightTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		407ACFE929E6F86400D65F47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		407ACFEC29E6F86400D65F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		407ACFEE29E6F86400D65F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E1DEFE29E7121C00A2C672 /* AdjustedHeightTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustedHeightTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				407ACFE929E6F86400D65F47 /* Assets.xcassets */,
 				407ACFEB29E6F86400D65F47 /* LaunchScreen.storyboard */,
 				407ACFEE29E6F86400D65F47 /* Info.plist */,
+				40E1DEFE29E7121C00A2C672 /* AdjustedHeightTableView.swift */,
 			);
 			path = test_scrollview;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E1DEFF29E7121C00A2C672 /* AdjustedHeightTableView.swift in Sources */,
 				407ACFE529E6F86200D65F47 /* ViewController.swift in Sources */,
 				407ACFE129E6F86200D65F47 /* AppDelegate.swift in Sources */,
 				407ACFE329E6F86200D65F47 /* SceneDelegate.swift in Sources */,
