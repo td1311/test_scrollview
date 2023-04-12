@@ -24,7 +24,6 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsB-Pb-XVC" userLabel="View 1">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
-                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="7Rg-rE-tOh"/>
                                                 </constraints>
@@ -114,6 +113,7 @@
                     <connections>
                         <outlet property="tableView1" destination="Btk-5S-ccH" id="huQ-AG-9LG"/>
                         <outlet property="tableView2" destination="hOc-6R-eaJ" id="pIy-lz-3iH"/>
+                        <outlet property="view1" destination="wsB-Pb-XVC" id="Juu-an-phL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -124,9 +124,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

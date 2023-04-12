@@ -6,12 +6,17 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView1: AdjustedHeightTableView!
     
     @IBOutlet weak var tableView2: AdjustedHeightTableView!
+    
+    @IBOutlet weak var view1: UIView!
+    
+    var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +26,24 @@ class ViewController: UIViewController {
         
         tableView2.delegate = self
         tableView2.dataSource = self
+        
+        webView = WKWebView(frame: view1.bounds, configuration: WKWebViewConfiguration())
+        webView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        webView.navigationDelegate = self
+        view1.addSubview(webView)
+        
+        let url = URL(string: "https://www.hackingwithswift.com")!
+        webView.load(URLRequest(url: url))
+        webView.allowsBackForwardNavigationGestures = true
+        
+        
     }
 
 
+}
+
+extension ViewController: WKNavigationDelegate {
+    
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -43,6 +63,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = "Hi \(indexPath)"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.view1.isHidden = true
     }
 }
 
